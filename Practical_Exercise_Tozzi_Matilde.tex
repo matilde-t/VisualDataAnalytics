@@ -43,6 +43,23 @@ Then, we use a \textit{volume} rendering and we set the transfer function in ord
 \caption{Visualising bones}
 \end{figure}
 
+We also tried to expand this concept by using a different color map and a smoother transition to total opacity in order to see which bones have the maximum density. To do so, we used the \textit{Rainbow Uniform} color map. As expected, the most dense bones of the upper part of the body are the teeth.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{VisHuman_Head/transfer_function_2}
+  \caption{Used transfer function}
+\end{subfigure}%
+\begin{subfigure}{.6\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{VisHuman_Head/human_head_2}
+  \caption{Resulting visualisation}
+\end{subfigure}
+\caption{Visualising bones density}
+\end{figure}
+
 \subsection {Asian Dragon} 
 
 The Asian Dragon is a \texttt{.ply} file containing a polygonal mesh consisting of 7219045 cells and 3609600 points of \texttt{float} type. The mesh is very dense, so that the surface looks fairly smooth. It requires a lot of zoom in order to see the components of the mesh.
