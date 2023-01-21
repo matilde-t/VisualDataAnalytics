@@ -80,6 +80,77 @@ The Asian Dragon is a \texttt{.ply} file containing a polygonal mesh consisting 
 \caption{Asian Dragon visualisation}
 \end{figure}
 
+\subsection {Particle tracing and streamlines}
+
+\subsection {RCSB protein data bank}
+
+The RCSB protein data bank contains a lot of datasets for various proteins. Each dataset contains different information about the structure of a specific protein. We chose to visualise the \textit{1H59 insulin}. The closest 3D view visualisation can be achieved by using the \textit{NGL viewer} on the website, with the parameters shown in Figure \ref{insulin_el} and \ref{insulin_res}.
+
+\begin{figure} [h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Proteins/1h59_insulin_el}
+\caption{1H59 insulin, element visualisation}
+\label{insulin_el}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\includegraphics[width=0.8\linewidth]{Proteins/1h59_insulin_res}
+\caption{1H59 insulin, residue visualisation}
+\label{insulin_res}
+\end{figure}
+
+Very similar visualisations can be obtained in ParaView. 
+
+For the one shown in Figure \ref{insulin_el}, we use the \textit{element} color property, the \textit{surface} representation and we specify in the color map editor to interpret values as categories. Then, we apply the \textit{BlueObeliskElements} preset.
+
+For the one shown in Figure \ref{insulin_res}, we use the \textit{restype} color property, the \textit{surface} representation and we specify in the color map editor to interpret values as categories. Then, we apply the \textit{Brewer Qualitative Set3} preset.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Proteins/1h59_insulin_el_pv}
+  \caption{Element visualisation}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+\centering
+  \includegraphics[width=\linewidth]{Proteins/1h59_insulin_res_pv}
+  \caption{Residue visualisation}
+\end{subfigure}
+\caption{1H59 insulin in ParaView}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section {Second part: Tableau}
