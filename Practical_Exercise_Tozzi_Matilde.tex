@@ -6,6 +6,14 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue
+}
 
 \title{Visual Data Analytics: Practical Exercise}
 \date{WS 2022/2023}
@@ -82,6 +90,27 @@ The Asian Dragon is a \texttt{.ply} file containing a polygonal mesh consisting 
 
 \subsection {Particle tracing and streamlines}
 
+For this task, we used a dataset from  \href{https://tuxriders.com/videos/postprocessing/}{TuxRiders}. 
+
+For the particle tracing, we used a 2D simulation of a fluid flow in a tube. We produced an \href{https://imgur.com/a/Ge00wdk}{animation} where we combine a background with the evolution of the velocity over time and the movement of the particles. To help in distinguishing the traces left behind, each batch of particles has a different colour. We also extracted a single frame as an example, from the 70th timestep, but we decided to keep all the particles on the same colour, given the fact that it's a static image. 
+
+For the streamlines, we see the behaviour of a fluid around a sphere. We decided to visualise the lines as tubes.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{Fluid_Flow/particle_tracing}
+  \caption{Particle tracing}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+\centering
+  \includegraphics[width=\linewidth]{Fluid_Flow/stream_lines}
+  \caption{Streamlines}
+\end{subfigure}
+\caption{}
+\end{figure}
+
 \subsection {RCSB protein data bank}
 
 The RCSB protein data bank contains a lot of datasets for various proteins. Each dataset contains different information about the structure of a specific protein. We chose to visualise the \textit{1H59 insulin}. The closest 3D view visualisation can be achieved by using the \textit{NGL viewer} on the website, with the parameters shown in Figure \ref{insulin_el} and \ref{insulin_res}.
@@ -151,7 +180,7 @@ For the one shown in Figure \ref{insulin_res}, we use the \textit{restype} color
 
 
 
-\newpage
+\clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section {Second part: Tableau}
 
