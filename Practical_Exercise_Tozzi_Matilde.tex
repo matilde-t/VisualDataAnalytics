@@ -205,6 +205,7 @@ We notice that neither the last, nor the first, nor the the middle ten countries
 \end{figure}
 
 \begin{figure}[h]\ContinuedFloat
+\centering
 	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{Tableau/a_3}
@@ -224,17 +225,110 @@ We notice that neither the last, nor the first, nor the the middle ten countries
 
 For this task, we use a line plot and a map.
 By filtering the states on the map, we see the corresponding development of sales values over time.
-Here we see that sometimes there are similar developments, for example in 
+Here we notice that sometimes there are similar developments, for example in \ref {sw} and \ref {new_england}.
 
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.8\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/b_1}
+		\caption{North-West}
+	\end{subfigure}
 
+	\begin{subfigure}{.8\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/b_2}
+		\caption{South-West}
+		\label {sw}
+	\end{subfigure}
+\end{figure}
 
+\begin{figure}[h]\ContinuedFloat
+\centering
+	\begin{subfigure}{.8\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/b_3}
+		\caption{Near the Great Lakes}
+	\end{subfigure}
 
+	\begin{subfigure}{.8\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/b_4}
+		\caption{New England}
+		\label {new_england}
+	\end{subfigure}
 
+	\begin{subfigure}{.8\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/b_5}
+		\caption{South-East}
+	\end{subfigure}
+	\caption{Relation geographical position - sales over time}
+\end{figure}
 
+\clearpage
 
+\subsection {Profit and sales correlation in different US cities}
 
+For this task, we use a scatter plot showing the sales and profit for each US city in the database. Since there are too many and we cannot clearly see each point, we provide two different ways of filtering the cities: geographically by selecting the cities on the map (\ref {map_filter}) or custom by using the list on the left (\ref {list_filter}).
 
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/c_1}
+		\caption{General visualisation}
+	\end{subfigure}
+\end{figure}
 
+\begin{figure}[h]\ContinuedFloat
+\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/c_2}
+		\caption{Map filter}
+		\label {map_filter}
+	\end{subfigure}
+
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/c_3}
+		\caption{List filter}
+		\label {list_filter}
+	\end{subfigure}
+	\caption{Profit and sales correlation in different US cities}
+\end{figure}
+
+\clearpage 
+
+\subsection {Sales and profit comparison between Florida's cities and other US cities}
+
+For this task, we weren't sure about the optimal representation, so we suggest two different approaches, each one with its own pros and cons.
+
+The first one (\ref {bubbles}) is a bubble chart where Florida's cities are highlighted in a different colour. We can then see that the profit is quite small compared to other cities and the sales are only slightly better. The two main problems with this visualisation are that we cannot see the negative profit values and that we cannot easily see a correlation between sales and profit.
+
+The second one (\ref {scatter_plot}) shows these two quantities as a scatter plot. The problem here is that it's difficult to see the single cities and in particular we couldn't find a way to put Florida's values in the foreground.
+
+\begin{figure}[h]
+\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/d_a}
+		\caption{Bubble chart}
+		\label {bubbles}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[h]\ContinuedFloat
+\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Tableau/d_b}
+		\caption{Scatter plot}
+		\label {scatter_plot}
+	\end{subfigure}
+	\caption{Sales and profit comparison between Florida's cities and other US cities}
+\end{figure}
 
 
 
